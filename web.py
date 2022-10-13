@@ -90,6 +90,8 @@ if file is not None and file.size!=0:
 
         zz=mortality(file)
         #ss=str(zz[0])
+        if zz==KeyError:
+            st.write(KeyError)
 
         st.write("The probility of survival is = ", zz[0]
                  )
